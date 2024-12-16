@@ -24,7 +24,7 @@ function getStringLength(value) {
   return value.length;
 }
 
-console.log('');
+getStringLength('');
 /**
  * Returns true if the value is a string, otherwise returns false.
  *
@@ -39,11 +39,7 @@ console.log('');
  *   isString('test') => true
  *   isString(new String('test')) => true
  */
-function isString(num) {
-  return String(num);
-  value instanceof String;
-}
-isString(123);
+function isString(/* number */) {}
 /**
  * Returns the result of concatenation of two strings.
  *
@@ -257,9 +253,7 @@ function reverseString(/* str */) {
  *   orderAlphabetically('textbook') => 'bekoottx'
  *   orderAlphabetically('abc123xyz') => '123abcxyz'
  */
-function orderAlphabetically(/* str */) {
-
-}
+function orderAlphabetically(/* str */) {}
 /**
  * Checks if a given string contains a specified substring.
  *
