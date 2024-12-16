@@ -19,12 +19,12 @@
  *   getStringLength(null) => 0
  *   getStringLength(undefined) => 0
  */
-function getStringLength(str) {
-  var length = 0;
-  while (s[length] !== undefined) length++;
-  return length;
+function getStringLength(value) {
+  if (!value) return 0;
+  return value.length;
 }
-getStringLength("");
+
+console.log('');
 /**
  * Returns true if the value is a string, otherwise returns false.
  *
@@ -258,9 +258,8 @@ function reverseString(/* str */) {
  *   orderAlphabetically('abc123xyz') => '123abcxyz'
  */
 function orderAlphabetically(/* str */) {
-  throw new Error('Not implemented');
-}
 
+}
 /**
  * Checks if a given string contains a specified substring.
  *
