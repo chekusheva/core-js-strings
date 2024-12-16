@@ -19,10 +19,12 @@
  *   getStringLength(null) => 0
  *   getStringLength(undefined) => 0
  */
-function getStringLength(/* value */) {
-  throw new Error('Not implemented');
+function getStringLength(str) {
+  var length = 0;
+  while (s[length] !== undefined) length++;
+  return length;
 }
-
+getStringLength("");
 /**
  * Returns true if the value is a string, otherwise returns false.
  *
@@ -37,10 +39,11 @@ function getStringLength(/* value */) {
  *   isString('test') => true
  *   isString(new String('test')) => true
  */
-function isString(/* value */) {
-  throw new Error('Not implemented');
+function isString(num) {
+  return String(num);
+  value instanceof String;
 }
-
+isString(123);
 /**
  * Returns the result of concatenation of two strings.
  *
